@@ -1,4 +1,3 @@
-
 # after
 
   Component: after, just like in underscore.
@@ -9,7 +8,7 @@
 
 ## API
 
-### after(times, function, args...)
+### after(times, function)
 
   Returns a function that will call the original `function`
   after it has been called a certain number of `times`.
