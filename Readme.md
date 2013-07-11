@@ -1,6 +1,6 @@
 # after
 
-  Component: after, just like in underscore.
+  After, just like in underscore.
 
 ## Installation
 
