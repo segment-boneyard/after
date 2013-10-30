@@ -1,12 +1,12 @@
 {
   "name": "after",
   "repo": "segmentio/after",
-  "description": "Component: after, just like in underscore.",
-  "version": "0.0.1",
-  "keywords": [],
-  "dependencies": {},
-  "development": {},
+  "description": "After, just like in underscore.",
+  "version": "0.1.0",
   "license": "MIT",
+  "development": {
+    "component/assert": "*"
+  },
   "scripts": [
     "index.js"
   ]

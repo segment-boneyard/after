@@ -1,12 +1,21 @@
 
-module.exports = function after (times, func) {
-  // After 0, really?
-  if (times <= 0) return func();
+/**
+ * Expose `after`.
+ */
 
-  // That's more like it.
-  return function() {
-    if (--times < 1) {
-      return func.apply(this, arguments);
-    }
+module.exports = after;
+
+
+/**
+ * Return the `fn` wrapped in logic that will only let it be called after
+ * it has been invoked a certain number of `times`.
+ *
+ * @param {Number} times
+ * @param {Function} fn
+ */
+
+function after (times, fn) {
+  return function () {
+    if (--times < 1) return fn.apply(this, arguments);
   };
-};
+}
