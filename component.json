@@ -1,13 +1,13 @@
 {
   "name": "after",
   "repo": "segmentio/after",
-  "description": "After, just like in underscore.",
   "version": "0.1.0",
+  "description": "Create a function that invokes a function after it's been called n or more times.",
   "license": "MIT",
-  "development": {
-    "component/assert": "*"
-  },
   "scripts": [
     "index.js"
-  ]
+  ],
+  "development": {
+    "component/assert": "*"
+  }
 }

@@ -1,0 +1,18 @@
+machine:
+  node:
+    version: 0.12
+dependencies:
+  pre:
+    - echo "github.com,192.30.252.*,192.30.253.*,192.30.254.*,192.30.255.* ssh-rsa $(ssh-keyscan -t rsa github.com | cut -d ' ' -f 3-)" >> ~/.ssh/known_hosts
+test:
+  override:
+    - make test-phantom
+    - BROWSER_NAME=chrome make test-browser
+    - BROWSER_NAME=firefox make test-browser
+    - BROWSER_NAME=safari make test-browser
+    - BROWSER_NAME=ie BROWSER_VERSION=11 make test-browser
+    - BROWSER_NAME=ie BROWSER_VERSION=10 make test-browser
+    - BROWSER_NAME=ie BROWSER_VERSION=9 make test-browser
+    - BROWSER_NAME=ie BROWSER_VERSION=8 make test-browser
+    - BROWSER_NAME=ie BROWSER_VERSION=7 make test-browser
+    - BROWSER_NAME=ie BROWSER_VERSION=6 make test-browser

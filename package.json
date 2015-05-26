@@ -1,9 +1,12 @@
 {
   "name": "after",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "description": "Create a function that invokes a function after it's been called n or more times.",
   "dependencies": {},
   "devDependencies": {
-    "mocha": "*",
-    "should": "*"
+    "eslint": "^0.21.2",
+    "eslint-config-segment": "^1.0.9",
+    "phantomjs": "^1.9.17",
+    "zuul": "^3.0.0"
   }
 }
